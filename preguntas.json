@@ -1,0 +1,52 @@
+[
+  {
+    "pregunta": "¿Qué significa HTML?",
+    "opciones": [
+      "HyperText Markup Language",
+      "HighText Machine Language",
+      "Hyper Tool Multi Language",
+      "None of the above"
+    ],
+    "respuesta": "HyperText Markup Language"
+  },
+  {
+    "pregunta": "¿Qué lenguaje se usa para darle estilo a una web?",
+    "opciones": [
+      "HTML",
+      "jQuery",
+      "CSS",
+      "XML"
+    ],
+    "respuesta": "CSS"
+  },
+  {
+    "pregunta": "¿Cuál de estos es un lenguaje de programación?",
+    "opciones": [
+      "HTTP",
+      "JSON",
+      "JavaScript",
+      "HTML"
+    ],
+    "respuesta": "JavaScript"
+  },
+  {
+    "pregunta": "¿Qué es Git?",
+    "opciones": [
+      "Un lenguaje de programación",
+      "Un sistema operativo",
+      "Un sistema de control de versiones",
+      "Una base de datos"
+    ],
+    "respuesta": "Un sistema de control de versiones"
+  },
+  {
+    "pregunta": "¿Qué significa API?",
+    "opciones": [
+      "Application Programming Interface",
+      "Application Protocol Interface",
+      "Applied Program Internet",
+      "Advanced Program Integration"
+    ],
+    "respuesta": "Application Programming Interface"
+  }
+]
