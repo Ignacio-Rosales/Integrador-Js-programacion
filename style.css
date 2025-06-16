@@ -5,6 +5,23 @@ body {
   padding: 0;
 }
 
+#formulario-usuario {
+  max-width: 600px;
+  margin: 50px auto;
+  background: #e3f2fd;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+input[type="text"] {
+  padding: 8px;
+  width: 70%;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
 .container {
   max-width: 600px;
   margin: 40px auto;
@@ -54,3 +71,4 @@ button:hover {
 .oculto {
   display: none;
 }
+

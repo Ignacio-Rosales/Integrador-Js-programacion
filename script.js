@@ -2,8 +2,12 @@
 let preguntas = []
 let preguntaActual = 0
 let puntaje = 0
+let nombreUsuario = ""
 
 // referencias a los elementos del DOM
+const formularioUsuario = document.getElementById('formulario-usuario')
+const formNombre = document.getElementById('form-nombre')
+const inputNombre = document.getElementById('nombre')
 const contenedorPregunta = document.getElementById('pregunta')
 const contenedorOpciones = document.getElementById('opciones')
 const botonSiguiente = document.getElementById('siguiente')
@@ -26,6 +30,17 @@ async function cargarPreguntas() {
         console.log(error)
     }
 }
+
+formNombre.addEventListener('submit', (e) => {
+    e.preventDefault()
+    nombreUsuario = inputNombre.value.trim()
+
+    if(nombreUsuario !== ""){
+        formularioUsuario.classList.add('oculto')
+        document.querySelector('.container').classList.remove('oculto')
+        cargarPreguntas()
+    }
+})
 
 // Muestra la pregunta actual y sus opciones en el DOM
 function mostrarPregunta() {
@@ -86,7 +101,7 @@ botonSiguiente.onclick = () => {
 function mostrarResultado() {
     quizContainer.classList.add('oculto')
     resultado.classList.remove('oculto')
-    puntajeFinal.textContent =  `Obtuviste ${puntaje} de ${preguntas.length} respuestas correctas.`
+    puntajeFinal.textContent =  `${nombreUsuario}, obtuviste ${puntaje} de ${preguntas.length} respuestas correctas.`
 }
 
 // Reinicia el juego para volver a empezar el quiz desde la primera pregunta
