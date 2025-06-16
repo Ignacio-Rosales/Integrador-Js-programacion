@@ -72,3 +72,40 @@ button:hover {
   display: none;
 }
 
+/* Estilos responsive */
+@media (max-width: 768px) {
+  .container, #formulario-usuario {
+    margin: 25px auto;
+    padding: 10px;
+  }
+
+  #form-nombre input {
+    width: 90%;
+  }
+
+  button {
+    width: 100%;
+    font-size: 18px;
+  }
+
+  .opcion {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 600px) {
+  h1, h2 {
+    font-size: 22px;
+  }
+
+  button, .opcion {
+    font-size: 16px;
+    padding: 12px;
+  }
+
+  .container, #formulario-usuario {
+    margin: 10px;
+    padding: 15px;
+  }
+}
+
