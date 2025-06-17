@@ -33,8 +33,10 @@ async function cargarPreguntas() {
 
 formNombre.addEventListener('submit', (e) => {
     e.preventDefault()
+    // Guarda el valor del input sacando los espacios de los costados
     nombreUsuario = inputNombre.value.trim()
 
+    // Muestra las preguntas si el nombre no es ""
     if(nombreUsuario !== ""){
         formularioUsuario.classList.add('oculto')
         document.querySelector('.container').classList.remove('oculto')
@@ -56,7 +58,7 @@ function mostrarPregunta() {
         const li = document.createElement('li')
         li.textContent = opcion
         li.classList.add('opcion')
-        // Asigna el evento de selección a cada opción
+        // Asigna el evento de selección a cada opción, esto se dispara cada vez que das click en un elemento li
         li.onclick = () => seleccionarRespuesta(opcion)
         contenedorOpciones.appendChild(li)
     }
